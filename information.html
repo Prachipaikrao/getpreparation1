@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-image:  linear-gradient(to left, #9e7dac, #583a91);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #562083;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.div1{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 600px;
+    text-align: right;
+    border: 5px solid rgb(118, 80, 168);
+    padding: 5px;
+  margin-left: 350px;
+  position: relative;
+}
+  .button {
+    background-color: #704091;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+    
+  }
+  table, th, td {
+  border:1px solid black;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<div class="div1"> 
+    <h3 style="text-align:center">Hamming code</h3>
+<p> <u>
+    <li style="text-align:center" >Hamming code is used to correct errors.</li>
+    <li style="text-align:center">Hamming code is also used for error detection. </li>
+    <li style="text-align:center">Hamming code can correct only one bit. </li>
+    <li style="text-align:center">Formula for Hamming code </li>
+      <p style="text-align:center"> m+r+1 <= 2^r</p>
+      <img  src="hammingcode.jpg" style="position:center;" width="600" height="300" alt="Photo">
+</u></p>
+    <button class="button"><a href="#">Next</a></button></div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="t.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+
+ 
+img {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    margin-top: -96px;
+    margin-left: -138px;
+    width: 400px;
+   height: 300px;
+    padding: auto;
+    border: 5px solid #ffffff;
+   }
+   .rotate_image {
+               -webkit-transform: rotate(30deg);
+               -moz-transform: rotate(30deg);
+               -ms-transform: rotate(30deg);
+               -o-transform: rotate(30deg);
+               transform: rotate(30deg);
+           }
+   
+           .img_demo {
+      filter: brightness(120%);
+      filter: contrast(120%);
+      filter: drop-shadow(10px 10px 10px rgb(209, 180, 224));
+   }
+   .blink{
+    animation: blinker 1.5s linear infinite;
+    color: #000;
+    font-family: sans-serif;
+
+   }
+   @keyframes blinker{
+    50% {
+        opacity: 0;
+    }
+   }
+           </style>
+
+</head>
+<body>
+    
+ 
+<div class="main">
+    <marquee class="blink" width="60%" direction="left" height="100px"  style="font-size: 30px; color: #ffffff;"  style="color: #ffffff;">
+        Crafti let's hack human brain by  mind tricks  to reduce time complexity 
+    </marquee>
+
+            <div class="icon">
+                <h2 class="logo"><i>Crafti...</i></h2>
+               
+                <nav>
+                    <div class="menu">
+                      <div class="logo">
+                        <a href="#" >crafticles</a>
+                      </div>
+                      <ul>
+                        <li><a href="t.html">Home</a></li>
+                        <li><a href="index.php">Comments</a></li>
+                        <li><a href="home.html">courses</a></li>
+                        <li><a href="communication.html">contact</a></li>
+                      </ul>
+                    </div>
+                  </nav></div>
+<div class="content">
+
+</div>
+<img class="rotate_image img_demo " src="labimage.jpg" width="1000" height="6000" alt="Photo">
+<form action="1.php" method="post">
+<div class="form">
+
+
+<br>
+    <h2>PART OF CRAFTY</h2>
+    <input type="email" placeholder="enter your email " name="email" required maxlength="50"  id="fldemail">
+
+    <input type ="password"  placeholder="Enter Password Here" required maxlength="15" id="password">
+
+    <input type="submit" value="login" class="inline-btn" name="submit">
+
+    <p class="link" style="color: #ffffff;">Don't have an account<br>
+    <a href="signup.html">Sign up </a> here</a></p>
+ 
+
+</div>
+</form>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

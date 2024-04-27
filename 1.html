@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="1.css">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 80px;
+    padding: 0;
+    width: 250px;
+    background-color: #e7e7e7;
+}
+
+li a {
+    display: block;
+    color: #713fc2;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+img {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    margin-top: -96px;
+    margin-left: -138px;
+    width: 400px;
+   height: 300px;
+    padding: auto;
+    border: 5px solid #ffffff;
+   }
+   .rotate_image {
+               -webkit-transform: rotate(30deg);
+               -moz-transform: rotate(30deg);
+               -ms-transform: rotate(30deg);
+               -o-transform: rotate(30deg);
+               transform: rotate(30deg);
+           }
+   
+           .img_demo {
+      filter: brightness(120%);
+      filter: contrast(120%);
+      filter: drop-shadow(10px 10px 10px rgb(209, 180, 224));
+   }
+   .blink{
+    animation: blinker 1.5s linear infinite;
+    color: #000;
+    font-family: sans-serif;
+
+   }
+   @keyframes blinker{
+    50% {
+        opacity: 0;
+    }
+   }
+           </style>
+
+</head>
+<body>
+ 
+<div class="main">
+    <marquee class="blink" width="60%" direction="left" height="100px"  style="font-size: 30px; color: #ffffff;"  style="color: #ffffff;">
+        Crafti let's hack human brain by  mind tricks  to reduce time complexity 
+    </marquee>
+
+            <div class="icon">
+                <h2 class="logo"><i>Crafti...</i></h2>
+               
+<ul>
+    <button class="btnn"><a href="">content</a></button>
+  <button class="btnn"><a href="home.html">Home</a></button>
+  <button class="btnn"><a href="about.html">About</a></button>
+  <button class="btnn"><a href="about.html">Information</a></button>
+  <button class="btnn"><a href="teachers.html">Be a crafty </a></button>
+  <button class="btnn"><a href="anynewidea.html">Any new idea  </a></button>
+  <button class="btnn"><a href="about.html">Course</a></button>
+  <button class="btnn"><a href="about.html">Course content</a></button>
+  <button class="btnn"><a href="about.html">YouTube</a></button>
+  <button class="btnn"><a href="about.html">Timeup</a></button>
+  <button class="btnn"><a href="communication.html">contact us</a></button>
+ 
+</ul></div>
+<div class="content">
+
+</div>
+<img class="rotate_image img_demo " src="labimage.jpg" width="1000" height="6000" alt="Photo">
+<form action="1.php" method="post">
+<div class="form">
+
+
+<br>
+    <h2>PART OF CRAFTY</h2>
+    <input type="email" name="email" placeholder="Enter Email Here" id="fldemail">
+    <input type="key" name="" placeholder="Enter Password Here" id="fldkey">
+    <button class="btnn"><a href="about.html">Login</a></button>
+
+    <p class="link">Don't have an account<br>
+    <a href="sign up.html">Sign up </a> here</a></p>
+ 
+
+</div>
+</form>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

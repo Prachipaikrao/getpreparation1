@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-image:  linear-gradient(to left, #9e7dac, #583a91);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.div1{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 300px;
+    text-align: right;
+    border: 5px solid rgb(118, 80, 168);
+    padding: 5px;
+  margin-left: 350px;
+  position: relative;
+}
+  .button {
+    background-color: #704091;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+  table, th, td {
+  border:1px solid black;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<div class="div1"> Assume that a 12 bit Hamming codeword  consisting of 8 bit data and 4 checks bits is
+   d8d7d6d5c8d4d3d2c4d1c2c1, where the data bits and check bits are given in:<br>
+
+    <p>options</p>
+   A> X is 1 y is 0 
+    B> x is 0 y is 0
+    C> x is 1 y is 1
+    D> x is 0 y is 1
+   Which one of the following choices given the correct value of x and y.
+   <table style="width:100%">
+  <tr>
+    <th>d8</th>
+    <th>d7</th>
+     <th>d6</th>
+    <th>d5</th>
+     <th>d4</th>
+    <th>d3</th>
+     <th>d2</th>
+    <th>d1</th>
+
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>x</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+
+  </tr>
+   
+</table>
+    <br>
+    <table style="width:100%">
+  <tr>
+    <th>c8</th>
+    <th>c4</th>
+     <th>c2</th>
+    <th>c1</th>
+  </tr>
+  <tr>
+    <td>y</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+    </table>
+    
+    
+
+    <button class="button"><a href="about.html">challenges</a></button></div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
